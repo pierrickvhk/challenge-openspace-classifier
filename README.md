@@ -109,7 +109,7 @@ It taught me how to:
 
 **Pierrick Van Hoecke**  
 AI & Data Science Student @ BeCode Ghent  
-Connect with me on [LinkedIn](https://www.linkedin.com/in/pierrick-van-hoecke/)
+Connect with me on [LinkedIn](https://www.linkedin.com/in/pierrick-van-hoecke-60b305310/)
 
 ---
 
