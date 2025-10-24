@@ -42,7 +42,9 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Open Space Organizer")
     p.add_argument("file", help="Path to .txt file with names (one per line)")
     p.add_argument("--seed", type=int, default=None, help="Optional random seed")
-    p.add_argument("--save", action="store_true", help="Save the assignment to openspace.csv")
+    p.add_argument(
+        "--save", action="store_true", help="Save the assignment to openspace.csv"
+    )
     return p.parse_args()
 
 

@@ -10,5 +10,8 @@ def read_names_from_txt(path: str | Path) -> List[str]:
     p = Path(path)
     if not p.exists():
         raise FileNotFoundError(f"File not found: {p}")
-    return [line.strip() for line in p.read_text(encoding="utf-8").splitlines() if line.strip()]
-
+    return [
+        line.strip()
+        for line in p.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]

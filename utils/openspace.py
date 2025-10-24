@@ -32,7 +32,9 @@ class OpenSpace:
             for seat in table.seats:
                 seat.remove_occupant()
 
-    def organize(self, names: Iterable[str], seed: int | None = None) -> Tuple[int, int]:
+    def organize(
+        self, names: Iterable[str], seed: int | None = None
+    ) -> Tuple[int, int]:
         """
         Randomly place people at tables, simple to follow:
         - clean names
@@ -44,7 +46,9 @@ class OpenSpace:
         :param seed: optional random seed for stable results
         :return: (placed_count, overflow_count)
         """
-        clean: List[str] = [n.strip() for n in names if isinstance(n, str) and n.strip()]
+        clean: List[str] = [
+            n.strip() for n in names if isinstance(n, str) and n.strip()
+        ]
         if not clean:
             return 0, 0
 
